@@ -12,10 +12,21 @@ fun main() {
         }
     }
 
+    fun requireNumber(number : Int) {
+        if (number in fibonnaci) {
+            println("O número pertence a sequência fibonnaci.")
+        } else  {
+            println("O número não pertence a sequência fibonnaci.")
+        }
+    }
+
     add(0)
     add(1)
     add(2)
     add(4)
+    add(6)
 
+    requireNumber(4)
+    requireNumber(5)
     println(fibonnaci)
 }
